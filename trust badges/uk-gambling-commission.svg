@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-labelledby="ukgcTitle">
+  <title id="ukgcTitle">UK Gambling Commission</title>
+  <rect width="360" height="120" rx="16" fill="#ffffff"/>
+  <rect x="6" y="6" width="348" height="108" rx="12" fill="#f4fbfc" stroke="#2cc9d4" stroke-width="4"/>
+  <text x="180" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#021c20">UK Gambling</text>
+  <text x="180" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#021c20">Commission</text>
+</svg>

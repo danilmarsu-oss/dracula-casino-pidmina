@@ -1,4 +1,19 @@
 (() => {
+  // Add column labels to each table cell so mobile stacked layout stays readable.
+  document.querySelectorAll('table').forEach((table) => {
+    const headers = Array.from(table.querySelectorAll('thead th')).map((th) =>
+      th.textContent.trim()
+    );
+    if (!headers.length) return;
+    table.querySelectorAll('tbody tr').forEach((row) => {
+      Array.from(row.querySelectorAll('td')).forEach((td, index) => {
+        if (!td.hasAttribute('data-label')) {
+          td.setAttribute('data-label', headers[index] || 'Detail');
+        }
+      });
+    });
+  });
+
   const faqSection = document.getElementById('faq');
   if (!faqSection) return;
   faqSection.querySelectorAll(':scope > div').forEach((item) => {
